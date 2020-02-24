@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Laboratori4</string>
+    <string name="encuesta">Encuesta</string>
+    <string name="Submit">Submit</string>
+    <string name="respuesta" />
+    <string name="Pregunta" />
+    <string name="add_pregunta" />
+    <string name="image_encuesta">TODO</string>
+    <string name="resultado_show">Resultados</string>
+    <string name="show_rating">Rating:</string>
+    <string name="cantidad_encuestas">Encuestas:</string>
+    <string name="new_encuesta">Nueva encuesta</string>
+    <string name="show_respuestas">Ver respuestas</string>
+    <string name="new_question">Ingrese una nueva pregunta</string>
+
+</resources>

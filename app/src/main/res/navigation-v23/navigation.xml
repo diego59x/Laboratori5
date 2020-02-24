@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.laboratori4.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_secondFragment"
+            app:destination="@+id/Preguntas" />
+        <action
+            android:id="@+id/action_mainFragment_to_biografia2"
+            app:destination="@id/fragment_Npregunta" />
+    </fragment>
+    <fragment
+        android:id="@+id/Preguntas"
+        android:name="com.example.laboratori4.Preguntas"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_preguntas">
+        <action
+            android:id="@+id/action_secondFragment_to_comentario"
+            app:destination="@id/Resultados" />
+        <deepLink
+            android:id="@+id/deepLink"
+            android:autoVerify="true"
+            app:uri="http://guatemala-myapp.com" />
+    </fragment>
+    <fragment
+        android:id="@+id/Resultados"
+        android:name="com.example.laboratori4.Resultados"
+        android:label="fragment_comentario">
+        <argument
+            android:name="coment"
+            android:defaultValue="default"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_comentario_to_mainFragment2"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_Npregunta"
+        android:name="com.example.laboratori4.Npregunta"
+        android:label="fragment_biografia" />
+</navigation>
